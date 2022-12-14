@@ -5,7 +5,7 @@ import {Tools} from './tools.js'
 import {Basic} from './basic.js'
 import {Blocks} from './blocks.js'
 import {Other} from './other.js'
-import {Defence} from './defence.js'
+import {Defense} from './defense.js'
 import {Brewing} from './brewing.js';
 import { Food } from './food.js';
 import {Mechanism} from './mechanism.js';
@@ -36,8 +36,8 @@ function mainPage(){
                     return <Blocks />;
                 case 'other' :
                     return <Other />;
-                case 'defence' :
-                    return <Defence />;
+                case 'defense' :
+                    return <Defense />;
                 case 'brewing' :
                     return <Brewing />;
                 case 'food' :
@@ -60,7 +60,7 @@ function mainPage(){
                     <button className='pointerCursor header' onClick={() => setCategory('tools')}> Tools | </button>
                     <button className='pointerCursor header' onClick={() => setCategory('blocks')}> Blocks | </button>
                     <button className='pointerCursor header' onClick={() => setCategory('other')}> Other | </button>
-                    <button className='pointerCursor header' onClick={() => setCategory('defence')}> Defence | </button>
+                    <button className='pointerCursor header' onClick={() => setCategory('defense')}> Defense | </button>
                     <button className='pointerCursor header' onClick={() => setCategory('brewing')}> Brewing | </button>
                     <button className='pointerCursor header' onClick={() => setCategory('food')}> Food | </button>
                     <button className='pointerCursor header' onClick={() => setCategory('mechanism')}> Mechanism | </button>
@@ -77,7 +77,7 @@ function mainPage(){
                         {
                         (category === 'other') ? <Other /> : null}
                         {
-                        (category === 'defence') ? <Defence /> : null}
+                        (category === 'defense') ? <Defense /> : null}
                         {
                         (category === 'brewing') ? <Brewing /> : null}
                         {
